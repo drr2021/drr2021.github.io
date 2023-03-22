@@ -156,13 +156,127 @@
     </section>
 
    <!--Contacta section-->
+   <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xrgvakyr" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter Your Message"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </section>
 
    <!-- Social accounts - Fixed to the right-->
-
+   <div class="socials">
+    <a href="https://twitter.com/DARIprogramador" target="_blank"
+      ><img
+        src="assets/icons/icons8-twitter.gif"
+        alt="Twitter"
+        loading="lazy"
+        class="socicon"
+    /></a>
+   <a href="https://www.linkedin.com/in/dario-ricardo-romero/" target="_blank"
+      ><img
+        src="assets/icons/icons8-linkedin-rodeado-de-círculo.gif"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="https://t.me/RulisD" target="_blank"
+      ><img
+        src="assets/icons/icons8-aplicación-telegrama.gif"
+        alt="telegrama"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="https://github.com/drr2021" target="_blank"
+      ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+    /></a>
+    </div>
    <!-- Scroll to top-->
+   <i class="scroll-up" id="scroll-up">
+    <img
+        src="assets/icons/icons8-arriba-círculo.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"/>  
+    </i>
 
    <!-- Foter section -->
-
+   <footer>
+    <p class="copy">&copy; Copyright 2023</p>
+    <p class="copy">
+      Built with &#x2661; by
+      <a href="https://www.facebook.com/dario.r.romero/" target="_blank"
+        ><img
+        src="assets/icons/icons8-facebook-rodeado-de-círculo.gif"
+        alt="Facebook"
+        loading="lazy"
+        class="socicon">
+        </a>
+    </p>
+    <a target="_blank" href="https://icons8.com/icon/lRtQAp17Ei7V/facebook-rodeado-de-c%C3%ADrculo">Facebook rodeado de círculo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </footer>
+   <!--Website scripts-->
+    <script>
+      // scroll to top functionality
+      const scrollUp = document.querySelector("#scroll-up");
+        
+        scrollUp.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
+      
+   <!--
    
-</body>
+   <a target="_blank" href="https://icons8.com/icon/GNvM541FBQu7/linkedin-rodeado-de-c%C3%ADrculo">LinkedIn rodeado de círculo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+   <a target="_blank" href="https://icons8.com/icon/ZRiAFreol5mE/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+   <a target="_blank" href="https://icons8.com/icon/xWVjuc9hryql/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+   <a target="_blank" href="https://icons8.com/icon/25n4hOEoY7ss/aplicaci%C3%B3n-telegrama">Aplicación telegrama</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+   <a target="_blank" href="https://icons8.com/icon/akG4VRhAoSii/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+   -->
+  </body>
 </html>
