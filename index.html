@@ -47,7 +47,7 @@
       <h2 class="bio-title">About Me</h2>
       <p class="bio-text">
         Analista en sistemas es el titulo al que aspiro en la <a href="https://www.frre.utn.edu.ar/">UTN-FRRe</a>
-        Realiza cursos de lenguajes de programacion: java, c++, visual studio .net
+        Realiza cursos de lenguajes de programacion: java, c++, visual studio .net y Python actualmente.
       </p>
     </div>
     </section>
@@ -56,8 +56,9 @@
    <section class="more-about">
     <h2>More About Me</h2>
     <p>Gracias al informatorio-2021 puedo aplicar lo que seria el html y un poco de ccs.</p>
-    <p>el imformatorio-2022 y pude realizarme como back-end en Python-Django.</p> 
+    <p>El imformatorio-2022 pude realizarme como back-end en Python-Django-Mysql-PostgreSql y servidor PythonAnywhere.</p> 
     <p>Basta experiencia en atencion al cliente, como operador y data-entry.</p>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdario.r.romero%2Fposts%2F6311086498930500&show_text=true&width=500" width="500" height="278" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </section>
 
    <!--Skill section-->
@@ -260,6 +261,20 @@
     <script>
       // scroll to top functionality
       const scrollUp = document.querySelector("#scroll-up");
+      // Nav hamburgerburger selections
+      const burger = document.querySelector("#burger-menu");
+      const ul = document.querySelector("nav ul");
+      const nav = document.querySelector("nav");
+      // Close hamburger menu when a link is clicked
+
+      // Select nav links
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((link) =>
+          link.addEventListener("click", () => {
+            ul.classList.remove("show");
+          })
+        );
         
         scrollUp.addEventListener("click", () => {
           window.scrollTo({
@@ -268,15 +283,11 @@
             behavior: "smooth",
           });
         });
+        burger.addEventListener("click", () => {
+          ul.classList.toggle("show");
+        });
+
     </script>
-      
-   <!--
-   
-   <a target="_blank" href="https://icons8.com/icon/GNvM541FBQu7/linkedin-rodeado-de-c%C3%ADrculo">LinkedIn rodeado de círculo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-   <a target="_blank" href="https://icons8.com/icon/ZRiAFreol5mE/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-   <a target="_blank" href="https://icons8.com/icon/xWVjuc9hryql/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-   <a target="_blank" href="https://icons8.com/icon/25n4hOEoY7ss/aplicaci%C3%B3n-telegrama">Aplicación telegrama</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-   <a target="_blank" href="https://icons8.com/icon/akG4VRhAoSii/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-   -->
+  
   </body>
 </html>
